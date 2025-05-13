@@ -9,7 +9,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 
 public class Perfume {
-
+    
+    private int id;
     private String nombre;
     private String marca;
     private double precio;
