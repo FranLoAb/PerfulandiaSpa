@@ -28,7 +28,7 @@ public class PerfumeService {
         return perfumeRepository.actualizar(perfume);
     }
 
-    public String deleteLibro (int id){
+    public String deletePerfume (int id){
         perfumeRepository.eliminar(id);
         return "Perfume Eliminado";
     }
