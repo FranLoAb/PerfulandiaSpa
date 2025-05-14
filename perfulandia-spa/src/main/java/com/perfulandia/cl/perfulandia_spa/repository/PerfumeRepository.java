@@ -21,7 +21,7 @@ public List<Perfume> obtienePerfumes(){
     public Perfume buscarPorId(int id){
         for (Perfume perfume : listaPerfumes) {
             if (perfume.getId()==id){
-                return libro;
+                return perfume;
             }
         }
         return null;
@@ -46,7 +46,7 @@ public List<Perfume> obtienePerfumes(){
         int idPosicion = 0;
 
         for (int i = 0; i < listaPerfumes.size(); i++){
-            if(listaPerfumes.get(1).getId()==lib.getId()){
+            if(listaPerfumes.get(1).getId()==per.getId()){
                 id = per.getId();
                 idPosicion = i;
             }
@@ -56,7 +56,7 @@ public List<Perfume> obtienePerfumes(){
         perfume1.setNombre(per.getNombre());
         perfume1.setMarca(per.getMarca());
         perfume1.setPrecio(per.getPrecio());
-        perfume1.setTamaño(per.getTamaño());
+        perfume1.setTamanio(per.getTamanio());
         perfume1.setStock(per.getStock());
 
         listaPerfumes.set(idPosicion, perfume1);
