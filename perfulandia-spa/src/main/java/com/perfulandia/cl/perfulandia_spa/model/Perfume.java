@@ -14,6 +14,6 @@ public class Perfume {
     private String nombre;
     private String marca;
     private double precio;
-    private int tamaño;
+    private int tamanio;
     private int stock;
 }
