@@ -39,3 +39,4 @@ public class UsuarioController {
         return usuarioService.deleteUsuario(id);
     }
 }
+
