@@ -1,46 +1,34 @@
 package com.perfulandia.cl.perfulandia_spa.services;
 
 import com.perfulandia.cl.perfulandia_spa.model.Perfume;
-import com.perfulandia.cl.perfulandia_spa.repository.PerfumeRepository;
+import com.perfulandia.cl.perfulandia_spa.Repository.PerfumeRepository;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
+@Transactional
 
 public class PerfumeService {
     @Autowired
     private PerfumeRepository perfumeRepository;
-    
-    public List<Perfume> getPerfumes(){
-        return perfumeRepository.obtienePerfumes();
+
+    public List<Perfume> findAll(){
+        return perfumeRepository.findAll();
     }
 
-    public Perfume savePerfume(Perfume perfume){
-        return perfumeRepository.guardar(perfume);
+    public Perfume findById(Integer id){
+        return perfumeRepository.findById(id).get();
     }
 
-    public Perfume  getPerfumeId(int id){
-        return perfumeRepository.buscarPorId(id);
+    public Perfume save(Perfume perfume){
+        return perfumeRepository.save(perfume);
     }
 
-    public Perfume updatePerfume (Perfume perfume){
-        return perfumeRepository.actualizar(perfume);
+    public void delete(Integer id){
+        perfumeRepository.deleteById(id);
     }
-
-    public String deletePerfume (int id){
-        perfumeRepository.eliminar(id);
-        return "Perfume Eliminado";
-    }
-
-    public int totalPerfumesv1(){
-        return perfumeRepository.obtienePerfumes().size();
-    }
-
-    public int totalPerfumesv2(){
-        return perfumeRepository.totalPerfumes();
-    }
-
-
 
 }
+
