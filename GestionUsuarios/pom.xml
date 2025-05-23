@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.perfulandia.cl</groupId>
-	<artifactId>perfulandia</artifactId>
+	<artifactId>perfulandia-spa</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>perfulandia</name>
-	<description>Perfulandia SPA</description>
+	<name>perfulandia-spa</name>
+	<description>Proyecto Perfulandia SPA</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -54,12 +54,6 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>com.mysql</groupId>
-			<artifactId>mysql-connector-j</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-
 	</dependencies>
 
 	<build>
