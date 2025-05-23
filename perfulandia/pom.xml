@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.perfulandia.cl</groupId>
-	<artifactId>perfulandia-spa</artifactId>
+	<artifactId>perfulandia</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>perfulandia-spa</name>
-	<description>Proyecto Perfulandia SPA</description>
+	<name>perfulandia</name>
+	<description>Perfulandia SPA</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -54,32 +54,13 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-
-		<!-- Spring Security principal -->
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
+			<groupId>com.mysql</groupId>
+			<artifactId>mysql-connector-j</artifactId>
+			<scope>runtime</scope>
 		</dependency>
-		
-		<dependency>
-			<groupId>net.sf.jasperreports</groupId>
-			<artifactId>jasperreports</artifactId>
-			<version>6.20.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi</artifactId>
-			<version>5.2.3</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi-ooxml</artifactId>
-			<version>5.2.3</version>
-	    </dependency>
 
 	</dependencies>
-
-
 
 	<build>
 		<plugins>

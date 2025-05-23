@@ -1,13 +1,13 @@
-package com.perfulandia.cl.perfulandia_spa;
+package com.perfulandia.cl.perfulandia;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PerfulandiaSpaApplication {
+public class PerfulandiaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PerfulandiaSpaApplication.class, args);
+		SpringApplication.run(PerfulandiaApplication.class, args);
 	}
-// HOLAAAAAAAAAAAAAAAAAAAAAAAAAA HOLA
+
 }
