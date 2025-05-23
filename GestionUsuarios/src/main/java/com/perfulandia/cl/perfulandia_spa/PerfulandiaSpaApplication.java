@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class PerfulandiaSpaApplicationUsuarios {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PerfulandiaSpaApplication.class, args);
+		SpringApplication.run(PerfulandiaSpa.class, args);
 	}
 
 }
